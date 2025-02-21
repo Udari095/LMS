@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
+</head>
+<body>
+    
+    <header class="text-center py-3 bg-purple text-white">  
+        <div class="logo">
+            <img src="512-logo.png" alt="Logo" width="80" class="img-fluid">
+        </div>
+        <h1>Student Registration System</h1>
+    </header>
+    
+    <nav class="bg-dark py-2">
+        <ul class="nav justify-content-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="signup.html">Registration</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    
+    <main class="container my-4">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="signup.jpg" alt="Student Image" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <div class="wrapper">
+                    <h2>Signup</h2>
+                    <p>Please fill in the details to create an account.</p>
+                    <form name="signupForm" action="signup.html" method="post">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username" class="form-control" placeholder="Enter your username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" placeholder="Confirm your password" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary btn-block" value="Sign Up">
+                        </div>
+                        <p>Already have an account? <a href="login.html">Login now</a>.</p>
+                        <a href="index.html" class="btn btn-link">
+                            <span class="home-icon">🏠</span> Back to Home
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="bg-dark text-white text-center py-3">
+        &copy; <span id="currentYear"></span> COM 2308
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

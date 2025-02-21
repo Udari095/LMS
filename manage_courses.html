@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manage Courses</title>
+</head>
+<body>
+    <h1>Manage Courses</h1>
+    <form method="post">
+        <fieldset>
+            <legend>Select Action:</legend>
+            <input type="radio" id="add" name="action" value="add" required>
+            <label for="add">Add Courses</label>
+            <input type="radio" id="remove" name="action" value="remove">
+            <label for="remove">Remove Courses</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select Courses:</legend>
+            {% for course in courses %}
+                <input type="checkbox" id="course{{ course['id'] }}" name="courses[]" value="{{ course['id'] }}"
+                       {% if course['id'] in selected_ids %}checked{% endif %}>
+                <label for="course{{ course['id'] }}">{{ course['course_name'] }}</label><br>
+            {% endfor %}
+        </fieldset>
+
+        <input type="submit" value="Save Changes">
+    </form>
+</body>
+</html>

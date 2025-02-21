@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="512-logo.png" alt="Logo">
+        </div>
+        <h1>Student Registration System</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.html">Registration</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="main-content">
+            <div class="image">
+                <img src="home.webp" alt="Student Image">
+            </div>
+            
+                <div class="wrapper">
+        
+                    <h2>Login</h2>
+                    <p>Please fill in your credentials to login.</p>
+            
+                    <form action="edit.html" method="post">
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text" name="username" class="form-control">
+                            <span class="invalid-feedback"></span>
+                        </div>    
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" name="password" class="form-control">
+                            <span class="invalid-feedback"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary" value="Login">
+                        </div>
+                        <p>Don't have an account? <a href="register.html">Sign up now</a>.</p><br>
+                        <a href="index.html" class="home-link">
+                    <span class="home-icon">🏠</span> Back to Home
+                </a>
+                    </form>
+                    
+                </div>
+            
+        </div>
+    </main>
+
+    
+    <footer style="position: absolute; bottom: 0; width: 100%; background-color: #333; color: #fff; text-align: center; padding: 10px 0;">
+        &copy; 2023 COM 2308
+    </footer>
+</body>
+
+</html>

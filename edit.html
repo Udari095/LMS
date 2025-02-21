@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+    <title>Add or Remove Selected Courses</title>
+	<link rel="icon" href="logo.png" type="x-icon">
+</head>
+<body>
+<header>
+<div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+		<h1>Student Registration System</h1>
+</header>
+
+<main>
+    <h2>Add or Remove Selected Courses</h2>
+    <form action="success.html" method="post">
+        <label>Select Action:</label><br>
+        <input type="radio" id="add_action" name="action" value="add" required>
+        <label for="add_action">Add Courses</label><br>
+        
+        <input type="radio" id="remove_action" name="action" value="remove">
+        <label for="remove_action">Remove Courses</label><br><br>
+
+        <label>Select Courses:</label><br>
+        <input type="checkbox" id="course1" name="courses[]" value="course1">
+        <label for="course1">Course 1</label><br>
+
+        <input type="checkbox" id="course2" name="courses[]" value="course2">
+        <label for="course2">Course 2</label><br>
+
+        <input type="checkbox" id="course3" name="courses[]" value="course3">
+        <label for="course3">Course 3</label><br>
+		
+		<input type="checkbox" id="course4" name="courses[]" value="course4">
+        <label for="course4">Course 4</label><br>
+		
+		<input type="checkbox" id="course5" name="courses[]" value="course5">
+        <label for="course5">Course 5</label><br><br>
+
+        <input type="submit" value="Save changes">
+    </form>
+	
+</main>
+    <footer>
+        &copy; 2023 All rights reserved
+    </footer>
+</body>
+</html>
